@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script>
+			$(document).ready(function(){
+
+				$('#open_ham').click(function(){
+					$('#side_menu').animate({
+						left: '0px',
+					},500,'easeInSine');
+				});
+
+				$('#close').click(function(){
+					$('#side_menu').animate({
+						left:'-3000px',
+					},1000,'easeOutBounce')
+				})
+			});			
+		</script>
+		<style type="text/css">
+
+			#side_menu_bar{
+				text-align: center;
+			}
+			#open_ham{
+				float: right;
+				font-size: 40px;
+			}
+			#side_menu img{
+				width: 10vw;
+			}
+			.side_menu_fixed div{
+				padding: 50px;
+				background-color: pink;
+				border-bottom: 3px solid green;
+				text-align: center
+
+			}
+			#side_menu{
+				position: absolute;
+				left:-3000px;
+/* 				display: block; */
+
+				height: 100vh;
+				
+			}
+			.side_menu_fixed{
+				position: fixed;
+				top: 0;
+				width: 100vw;
+				height: 10vh;
+				opacity: .9;
+			}
+			P{
+				font-size: 30px;
+			}
+		</style>
+		<title>jQuery</title>
+	</head>
+	<body>
+		<div id="side_menu_bar">
+				<a href="index.html"><img src="images/logo_bot.png"></a>
+				<div id="open_ham"><i class="fas fa-bars"></i></div>
+				<div class="clear"></div>	
+		</div>
+		<div id="side_menu">
+			<div class="side_menu_fixed">
+				<div id="close">close</div>
+				<div>123</div>
+				<div>456</div>
+				<div>789</div>
+				<div>10000</div>
+				<div>12000</div>
+			</div>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut explicabo possimus aperiam reprehenderit error nesciunt, voluptatem maiores molestias, at dolor voluptatum accusantium suscipit cum repellat laudantium minima officiis amet distinctio perspiciatis iure praesentium deserunt tempore consequuntur recusandae necessitatibus? Est eius, laudantium nihil? Ea pariatur aspernatur harum accusantium praesentium illum voluptate quia fuga corrupti cum, eum magnam eos quasi consequatur esse. Recusandae quasi asperiores earum, vitae iste, quam laborum esse ex ipsam velit tenetur eveniet, iusto minima et rem voluptates incidunt aut laboriosam accusantium nulla excepturi modi corporis. Id consequatur accusantium reiciendis reprehenderit dolor aliquam possimus quaerat dolorem saepe doloremque expedita est magni tenetur minima odio architecto, asperiores error corrupti voluptate placeat amet ex. Quo deleniti dolorum praesentium impedit neque omnis, soluta sapiente quis ducimus dolores tempora amet fugit odio dicta ipsum aspernatur est quasi a enim unde possimus! Tenetur tempore, eum, nobis libero, pariatur, nostrum assumenda fuga minus perspiciatis deserunt molestiae. Laborum repudiandae voluptatem, vel earum accusantium doloribus itaque dicta facilis accusamus velit quia sequi asperiores beatae dolores odit ullam ipsa quibusdam totam ipsam minus fuga! Consectetur deleniti deserunt praesentium odio fuga reiciendis, ab, perferendis quaerat quidem voluptatum illo, hic tenetur. Obcaecati quos consequuntur illum laudantium ipsam impedit fugiat aut provident est? Temporibus dolores optio cum. Quasi cumque debitis obcaecati officiis deserunt corporis officia placeat iure aperiam, cum sit sunt sed, quisquam possimus tempora, beatae expedita ullam modi! Voluptatibus eaque molestiae ab, incidunt accusamus eum tempore aspernatur. Fugiat rerum praesentium vero eveniet expedita facere voluptate perspiciatis debitis error, totam tempore ratione mollitia fuga ab et ducimus adipisci in, libero eum quis, dicta, porro corrupti. Corporis porro ut minima optio laudantium rem ratione quae explicabo deserunt, illum autem id, saepe harum aut alias similique, dolorum nobis eius. Nisi adipisci, eius nobis quis natus magni, culpa dignissimos consequuntur sunt cumque vero eos saepe laborum sint molestiae, dolor suscipit, totam amet! Provident eaque, odio dicta ad nemo fuga quibusdam fugit quam quae at! Perspiciatis non assumenda quae ipsum quaerat hic quam debitis voluptas reiciendis, molestiae dignissimos. Cumque amet provident iste perferendis voluptas error expedita fugiat necessitatibus distinctio repudiandae nulla corporis facere, omnis rerum, doloribus aspernatur natus officia est adipisci recusandae aut in quia. Tenetur pariatur iste, veniam voluptatibus deleniti saepe maxime laborum ipsum, doloremque, error quis inventore velit temporibus fuga perspiciatis quas laudantium praesentium, expedita dignissimos quam sed animi. Ab error nobis similique optio facilis iste, nihil, voluptatem natus fugit quisquam id eum accusamus incidunt, quidem explicabo itaque eos quasi voluptatum cumque ipsam porro. Soluta incidunt, aliquam, nostrum enim perferendis cumque laboriosam exercitationem quo tenetur illum nemo ullam cupiditate possimus sapiente officiis impedit eos earum fuga id voluptate non! Repellendus non, soluta. Animi possimus ratione dolore saepe unde illo cum veniam quod molestiae, consectetur minus dicta fugit exercitationem fuga officia libero et pariatur in? Sed consequatur alias iusto voluptate atque facilis veniam enim similique, tempora aut ut sint sapiente incidunt commodi natus assumenda minima harum ipsum magni asperiores fugit accusantium ea. Voluptatum omnis voluptatibus optio, magnam cumque tenetur voluptas dolore consectetur quas non.</p>
+	</body>
+</html>

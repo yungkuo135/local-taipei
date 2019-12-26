@@ -1,0 +1,334 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	/* outline: 1px solid red; */
+}
+.menu>li:nth-child(2)::after{
+	transform: scale(1, 1);
+
+}
+.header{
+/* 	height: 410px; */
+	background-image: url('./images/ximen_tour.jpg');
+	width: 100%;
+	height: 80vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+.header_title{
+	font-family: Arial;
+	font-size: 60px;
+	text-shadow:0px 3px 5px black;
+	color: white;
+	padding-top: 10%;
+	text-align: center;
+}
+
+.intro_title{
+	font-family: Arial;
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;	
+	padding: 3% 0;
+}
+
+
+.intro{
+	padding: 5% 0px 3% 0px;
+}
+
+.tour_pic{
+	float: left;
+}
+.col-8,
+.col-4{
+	float: left;
+}
+
+.tour_pic>img{
+	width: 100%;
+}
+.tour_script{
+	position: relative;
+	box-sizing: border-box;
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 5%;
+	border-left: 3px solid ;
+	border-image:linear-gradient(180deg, #d83a87 40% , #d3d309 60%) 1 100%;
+	font-family: Roboto;
+	
+}
+.tour_script h2{
+	font-family: Arial;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.tour_script p{
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 300;
+	opacity: .8;
+}
+.detail{
+	padding: 20px 0px;
+}
+.tour_detail{
+	padding-left: 25%;
+	box-sizing:border-box;
+	border-right: 3px solid ;
+	border-image:linear-gradient(180deg, #d83a87 40% , #d3d309 60%) 1 100%;
+}
+.tour_detail>h5{
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: 300;
+	margin:5% 0px 1% 0px;
+}
+
+.tour_detail>h5:first-of-type{
+	margin: auto;
+}
+
+.tour_detail>p{
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 20px;
+	opacity: .8;
+}
+.tour_detail_pic>img{
+	width: 80%;
+	margin-left: 10%;
+}
+
+
+#imgView{
+  overflow:hidden;
+  width:100%;  
+  height:55vw;
+  position: relative;
+	
+}    
+#toLeft{
+  position: absolute;
+  left:0%;
+  top:38%;
+  width: 0px;
+  height: 0px;
+  color:white;
+  font-size:60px;
+  font-weight:bold;
+  line-height:50px; 
+  z-index:5;
+  } 
+#toRight{
+  position: absolute;
+  left:90%;
+  top:38%;
+  width:0px;
+  height:0px;
+  color:white;
+  font-size:60px;
+  font-weight:bold;
+  line-height:50px;    
+  z-index:5;
+}
+
+.bannerImg {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+@media screen and (max-width: 767px){
+	.tour_script{
+		box-sizing: border-box;
+		margin-top: 5%;
+		margin-left: 0%;
+		margin-right: 0%;
+		padding-left: 0%;
+		border-left: 0px
+	}
+	.tour_script h2{
+		text-align: center;
+		font-family: Arial;
+		font-size: 30px;
+		margin: 5% 0;
+	}
+	.tour_script p{
+		margin-top: 5%;
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 300;
+		opacity: .8;
+	}
+	.tour_script{
+	border: 0px;
+		
+	}			
+	.detail{
+		padding: 5% 0;
+	}
+	.tour_detail{
+		padding-left: 0%;
+		box-sizing:border-box;
+		border: 0; 
+	}
+
+	.tour_detail>h5{
+		font-family: Arial;
+		font-size: 24px;
+		font-weight: 300;
+		margin:5% 0px 1% 0px;
+	}
+
+	.tour_detail>h5:first-of-type{
+		margin: auto;
+	}
+
+	.tour_detail>p{
+		font-family: Roboto;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 20px;
+		opacity: .8;
+	}
+
+}
+
+.more{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 5% 0px;
+	text-align: center;
+	position: relative;
+}
+.more>h2{
+	width: 100%;
+	text-align: left;
+	font-family: arial;
+	font-size: 40px;
+	margin-left: 5%;
+	margin-bottom: 3%;
+}
+.more_pic{
+	box-sizing: border-box;
+	display: flex;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 300px;
+	height: 250px;
+	margin-bottom: 5%;
+}
+.more_pic01{
+	background-image: url(./images/Yanmingshan.png);
+}
+.more_pic02{
+	background-image: url(./images/temple.jpg);		
+}
+.more_pic03{
+	background-image: url(./images/jiufen.png);		
+}
+.more_pic04{
+	background-image: url(./images/csk.jpg);		
+}
+.more_pic05{
+	background-image: url(./images/elephant.jpg);			
+}
+.more_cover{
+	display: flex;
+	margin: auto;
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	background-image: url(./images/cover.png);
+	border: 1px solid white;
+	transition: 0.5s;
+}
+
+.more span{
+	margin: auto;
+	background-color: white;
+	color: black;
+	padding: 5%;
+	font-family: roboto;
+	font-size: 20px;
+	font-weight: 800;
+	transition: .5s;
+}
+.more_pic:hover .more_cover {
+	width: 100%;
+	height: 100%;
+}
+.more_pic:hover .more_cover span{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	font-size: 30px;
+	line-height: 250px;
+	background-color: #41BAAE;
+	color: white;
+	opacity: .8;
+}
+@media screen and (max-width: 767px){
+	.more>h2{
+
+		text-align: center;
+		font-family: arial;
+		font-size: 30px;
+		margin: 5% 0;
+	}
+}
+.sign_form{
+	background-color: #B1B1B1;
+	text-align: center;
+	padding: 30px 0px;
+}
+.sign_form p{
+	color: white;
+	font-family: Roboto;
+	font-size: 30px;
+}
+.sign_form p+p{
+	color: white;
+	font-family: Roboto;
+	font-size: 20px;
+
+}
+.sign_form input{
+	padding: 1%;
+}
+
+.sign_box{
+	height: 30px;
+	display: block;
+	margin: 10px auto;
+	font-family: Roboto;
+
+}
+.sign_button{
+	font-family: Roboto;
+	color: black;
+	background-color:#D3D309;
+	border: 1px solid grey;
+	padding: 15px;
+	display: inline-block;		
+}
+@media screen and (max-width: 767px){
+	.sign_form input{
+		padding: 1% 0 1% 1%;
+	}
+}
+
+@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+	/* ie 10, 11 only */
+	.more span{
+		height:10%;
+	}
+}

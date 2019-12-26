@@ -1,0 +1,251 @@
+
+.menu>li:nth-child(3)::after{
+	transform: scale(1, 1);
+
+}
+.header{
+	background-image: url('./images/sky.png');
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	height: 80vh;
+
+}
+.header_title{
+	font-family: Arial;
+	font-size: 48px;
+	text-shadow:0px 5px 5px black;
+	color: white;
+	padding-top: 10%;
+	text-align: center;
+}
+.header_title>span{
+	font-family: ar darling;
+}
+.private_title{
+	width:66.666%;
+	margin:5% auto;
+	line-height: 18px;
+	text-align: center;
+	font-family: ROBOTO;
+}
+.private_title h2{
+	color: #31353e;
+	font-family: arial;
+	/* font-weight: 400; */
+	font-size: 40px;
+	background-color:/*  #6a6f76 */;
+	border-left: 3px solid;
+	-webkit-border-image: linear-gradient(180deg, #d83a87 40% , #d3d309 60%) 1;
+	border-image: linear-gradient(180deg, #d83a87 40% , #d3d309 60%) 1;
+	padding: 10px;
+	padding: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+}
+.private_title p{
+/* 	opacity: .8; */
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 22px;
+	text-align: justify;
+	font-family: ROBOTO;
+}
+.private_title img{
+	float: left;
+	width: 300px;
+	box-shadow: 5px 5px 5px #888888;
+	margin: 0px 30px 20px 0px;
+}
+.gallery_row{
+	text-align: center;
+	float: left;
+	width: 20%;
+}
+.gallery_space{
+	float: left;
+	width: 10%;
+	height: 10px;
+}
+.gallery_row img{
+	width: 94%;
+	margin: 3% 3%;
+}
+
+.pt{
+	position: relative;
+}
+.pt:hover img{
+	box-shadow: 5px 5px 5px #888888;
+}
+.pt p{
+	position: absolute;
+	display: inline-block;
+	color:white;
+	font-size: 20px;
+	padding: 5%;
+	width: 84%;
+	background-color: rgba(0, 0, 0, .5);
+	bottom: 2%;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+@media screen and (max-width: 767px){
+	.private_title{
+		margin:5% auto;
+		line-height: 30px;
+		text-align: center;
+		font-family: ARIAL;
+	}	
+	.private_title h2{
+		width: 100%;
+		font-size: 30px;
+		border: 0px;
+	}
+	.private_title img{
+		float: none;
+		width: 80%;
+		box-shadow: 5px 5px 5px #888888;
+		margin: 10px auto;
+	}
+	.private_title p{
+
+		text-align: left;
+	}
+	.gallery_row{
+		text-align: center;
+		float: left;
+		width: 100%;
+		margin: auto;
+	}
+	.gallery_space{
+		display: none;
+	}
+
+	.pt:hover img{
+		box-shadow: 5px 5px 5px #888888;
+	}
+
+}
+
+
+.private_need{
+	margin-top: 5%;
+	padding: 3% 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+/* 	background-color: #4abaae; */
+	text-align: center;
+	font-family: ROBOTO;
+/* 	color: white; */
+}
+.private_need_item{
+	width: 20%;
+	padding: 2% 0;
+	border: 3px  dashed #d3d309;
+	margin: 0px 1px;
+}
+.private_need>h2{
+	width: 100%;
+/* 	color: white; */
+	font-family: arial;
+/* 	font-weight: 300; */
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.private_need_item>i{
+/* 	color: white; */
+	font-size:30px; 
+	display: block;
+	margin: 20px 0px 10px 0px;
+}
+span{
+	display:inline-block;
+	font-weight: 200;
+	padding: 10px;
+}
+
+@media screen and (max-width: 767px){
+	.private_need h2{
+		font-size: 30px;
+	}
+
+}
+
+.sign_form{
+	box-sizing: border-box;
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+	padding: 3% 1%;
+	background-color: #b1b1b1
+}
+.sign_form>h2{
+	color: white;
+	font-family: arial;
+	font-size: 40px;
+}
+.sign_form>h2+p{
+	font-family: roboto;
+	font-size: 20px;
+	color: white;
+}
+form{
+	padding: 1% 0% 1% 2%;
+}
+.form_box{
+	float: left;
+	margin: 0px 10px;
+	width: 46%;
+}
+
+.input_box{
+	height: 40px;
+	width: 98%;
+	padding: 1%;
+	display: block;
+	margin: 10px auto;
+	font-family: Roboto;
+}
+textarea{
+	width: 100%;
+	margin: 10px auto;
+	padding: 1%;
+	font-family: Roboto;
+}
+@media screen and (max-width: 768px){
+	.form_box{
+	width: 80%;
+	margin: 0 10%;
+	}
+	.sign_form{
+		width: 100%;
+	}
+	.sign_form>h2{
+
+		font-size: 30px;
+	}
+	.sign_form>h2+p{
+		padding: 2% 0;
+		font-size: 20px;
+		color: white;
+	}
+	textarea{
+		width: 98%;
+		margin: 10px auto;
+		padding: 1%;
+		font-family: Roboto;
+	}
+}
+
+.sign_button{
+	font-family: Roboto;
+	color: black;
+	background-color:#D3D309;
+	border: 1px solid grey;
+	padding: 15px;
+	display: inline-block;		
+}
